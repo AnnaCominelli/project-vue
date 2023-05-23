@@ -1,16 +1,37 @@
-<script setup>
-/*import HelloWorld from './components/HelloWorld.vue'*/
-/*import TheWelcome from './components/TheWelcome.vue'*/
+<script>
+import HelloWorld from './components/HelloWorld.vue'
+import TheWelcome from './components/TheWelcome.vue'
 import CustomComponent from './components/CustomComponent.vue'
+
+import worksData from './assets/works.json'
+
+export default {
+  data() {
+    return {
+      works: worksData,
+    };
+  },
+  components: {
+   CustomComponent,
+  },
+};
+
 </script>
 
 <template>
-  <CustomComponent />
 <header>   
   </header>
 
 <main>
-    <TheWelcome />
+      <div class="row">
+        <div class="col" v-for="work in works" :key="work.id">
+           <CustomComponent 
+            :title="work.title"
+            :abstract="work.description"
+            :imageUrl="work.image_thumbnail"
+          />
+        </div>
+      </div> 
   </main>
 </template>
 
@@ -25,6 +46,5 @@ header {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
 }
 </style>
