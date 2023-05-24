@@ -1,6 +1,5 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Header from './components/Header.vue'
 import CustomComponent from './components/CustomComponent.vue'
 
 import worksData from './assets/works.json'
@@ -12,19 +11,20 @@ export default {
     };
   },
   components: {
-   CustomComponent,
+    Header,
+    CustomComponent,
   },
 };
 
 </script>
 
 <template>
-<header>   
-  </header>
-
 <main>
+  <header>
+
+  </header>
       <div class="row">
-        <div class="col" v-for="work in works" :key="work.id">
+        <div class="col-12 col-md-6" v-for="work in works" :key="work.id">
            <CustomComponent 
             :title="work.title"
             :abstract="work.description"

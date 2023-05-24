@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Work 1",
     "description": "Firt work",
-    "image_thumbnail": "https://picsum.photos/300/200",
+    "image_thumbnail": "https://source.unsplash.com/random/500×700/?landscape",
     "image_detail": "https://picsum.photos/1024/768",
     "client": "Client 1",
     "url": "https://www.google.com"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Work 2",
     "description": "Second work",
-    "image_thumbnail": "https://picsum.photos/300/200",
+    "image_thumbnail": "https://source.unsplash.com/random/500×700/?landscape",
     "image_detail": "https://picsum.photos/1024/768",
     "client": "Client 1",
     "url": "https://www.google.com"
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Work 3",
     "description": "Third work",
-    "image_thumbnail": "https://picsum.photos/300/200",
+    "image_thumbnail":"https://source.unsplash.com/random/500×700/?landscape",
     "image_detail": "https://picsum.photos/1024/768",
     "client": "Client 1",
     "url": "https://www.google.com"

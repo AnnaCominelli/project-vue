@@ -2,17 +2,16 @@
 defineProps({
   title: String,
   abstract: String,
-  color: String,
   imageUrl: String,
 })
 </script>
 
 <template>
-   <div class="custom-component" >
-    <div class="title text-center" :style="{ 'background-color': color }">
-      <img :src="imageUrl" alt="" class="image image-fluid">
-      <h2>{{ title }}</h2> 
-      <p class="abstract">
+   <div class="section" >
+    <div class="image">
+      <img :src="imageUrl" width="200" height="250">
+      <h2 class="title" >{{ title }}</h2> 
+      <p class="description">
         {{ abstract }}
       </p>
     </div>
@@ -21,13 +20,12 @@ defineProps({
 
 <style scoped>
   .title {
-    font-size: 1em;
+    font-size: 2em;
   }
   .custom-component {
     background-color: v-bind(color);
   }
-
   .image {
-    width: 100%;
+    margin-top: 40px;
   }
 </style>
